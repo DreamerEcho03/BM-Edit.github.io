@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG">
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG">
+  <meta property="og:url" content="URL OF THE WEBSITE">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>BM-Edit</title>
+  <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link rel="icon" type="image/x-icon" 
+  <link href="./BM-Edit_files/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./BM-Edit_files/bulma.min.css">
+  <link rel="stylesheet" href="./BM-Edit_files/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./BM-Edit_files/bulma-slider.min.css">
+  <link rel="stylesheet" href="./BM-Edit_files/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./BM-Edit_files/academicons.min.css">
+  <link rel="stylesheet" href="./BM-Edit_files/index.css">
+
+  <script src="./BM-Edit_files/jquery.min.js.下载"></script>
+  <script src="./BM-Edit_files/main.js.下载"></script><script src="./BM-Edit_files/ViewSDKInterface.js.下载"></script>
+  <script defer="" src="./BM-Edit_files/fontawesome.all.min.js.下载"></script>
+  <script src="./BM-Edit_files/bulma-carousel.min.js.下载"></script>
+  <script src="./BM-Edit_files/bulma-slider.min.js.下载"></script>
+  <script type="text/javascript" async="" src="./BM-Edit_files/MathJax.js.下载"></script>
+    <script type="text/x-mathjax-config;executed=true">
+        MathJax.Hub.Config({
+	    tex2jax: {
+	        inlineMath: [['$','$'], ['\\(','\\)']],
+	        processEscapes: true
+	    }
+	});
+    </script>
+  <script src="./BM-Edit_files/index.js.下载"></script>
+<style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBFullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:10000;
+        margin: 0 !important; padding: 0 !important;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBLoader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 10000;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #1473E6;
+        width: 56px !important;
+        height: 56px !important;
+        margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        -webkit-animation: lbSpin 2s linear infinite;
+        animation: lbSpin 2s linear infinite;
+    }
+    @-webkit-keyframes lbSpin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes lbSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-test.mjx-test-display {display: table!important}
+.mjx-test.mjx-test-inline {display: inline!important; margin-right: -1px}
+.mjx-test.mjx-test-default {display: block!important; clear: both}
+.mjx-ex-box {display: inline-block!important; position: absolute; overflow: hidden; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0; width: 1px; height: 60ex}
+.mjx-test-inline .mjx-left-box {display: inline-block; width: 0; float: left}
+.mjx-test-inline .mjx-right-box {display: inline-block; width: 0; float: right}
+.mjx-test-display .mjx-right-box {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+.MJXc-TeX-vec-R {font-family: MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}
+.MJXc-TeX-vec-B {font-family: MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-R; src: local('MathJax_Vector'), local('MathJax_Vector-Regular')}
+@font-face {font-family: MJXc-TeX-vec-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-vec-B; src: local('MathJax_Vector Bold'), local('MathJax_Vector-Bold')}
+@font-face {font-family: MJXc-TeX-vec-Bx; src: local('MathJax_Vector'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-vec-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf') format('opentype')}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- <h1 class="xtitle is-1 publication-title" style="font-size: 31px;"><strong>VMC</strong></h1><br> -->
+            <h2 class="xtitle is-1 publication-title" style="font-size: 2.8rem;">
+              </font><font color="SeaGreen">BM-Edit</font>: Background Retention and Motion Consistency for Zero-shot Video Editing
+
+            </h2><br>
+            <div class="is-size-5 publication-authors">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="hero teaser">
+<div class="is-max-desktop">
+
+
+<div id="results" style="background-color: rgb(255, 255, 255);">
+  <br>
+
+      <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/01/Aseagulliswalking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input：A  </font><font color="SeaGreen"> seagull </font>is walking.
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/01/Acrowiswalking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Crow
+          </div>
+          </th>
+          <th>
+
+             <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/01/Aduckiswalking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Duck
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/01/Aeagleiswalking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Eagle
+          </div>
+          </th>
+          <th>
+
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/01/Aowliswalking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Owl
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/01/Achickeniswalking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Chicken
+          </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+
+
+    <table style="width: 98%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/07/Cats playing with dolls.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input: </font><font color="SeaGreen">Cats </font> are playing with </font><font color="Red">dolls.
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/07/Monkeys playing with coconuts.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Monkeys <br> </font> → </font><font color="Red">coconuts
+          </div>
+          </th>
+          <th>
+
+             <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/07/Tigers playing with apples.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Tigers <br> </font> → </font><font color="Red">apples
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/07/Rabbits playing with easter eggs.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Rabbits <br> </font> → </font><font color="Red">easter eggs
+          </div>
+          </th>
+          <th>
+
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/07/Dogs playing with balls.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → </font><font color="SeaGreen">Dogs <br> </font> → </font><font color="Red">balls
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/07/Pandas playing with a pear and dragon fruit.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → </font><font color="SeaGreen">Pandas <br> </font> → </font><font color="Red"> a pear and a dragon fruit
+          </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+  </div>
+</div>
+
+
+<section class="section hero is-light" style="background-color: rgb(243, 242, 242);">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 17px;">
+           Diffusion-based generative models have achieved remarkable progress in zero-shot video editing.
+              However, existing methods still remain two practical limitations: (1) The randomness of the
+              diffusion model makes it difficult to maintain background invariance; (2) Due to the complexity of
+              temporal motion, these methods struggle to achieve consistent control of the target object motion,
+              and may suffer from frame-to-frame flickering. To address these issues, we propose a simple yet
+              effective method called BM-Edit for zero-shot video editing. Specifically, we design an uncertainty-guided
+              background retention mechanism based on Segment and Track Anything  to achieve fine control over the
+              background. Furthermore, in order to solve the problem of inaccurate background retention due to object
+              target changes, we adopt a novel progressive fuzzy mask strategy to dynamically adjust the boundary of
+              the target object. Subsequently, to ensure that the target object's motion of the edited video remains
+              synchronized with the source video, we establish two constraints for the motion relation in different
+              representative spaces: Mahalanobis distance and Inter-frame difference. The former achieves accurate
+              motion synchronization by measuring the Mahalanobis distributions of the source and target videos in
+              the high-dimensional feature space. While the latter maintains the motion consistent by learning the
+              frame-to-frame motion vectors in the source video from the low-dimensional feature space. In this way,
+              our  BM-Edit can achieve precise motion synchronization while retaining the background.  
+              Extensive experimental results on real-world videos demonstrate the effectiveness and superiority of the proposed method.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <br><br>
+       <h2 class="title is-3">Overview</h2>
+      <!-- <h2 class="title is-3">Space-Time Self-Similarity</h2> -->
+      <img class="center-img center" src="./BM-Edit_files/overview.jpg" width="200%">
+      <br><br>
+      <h3 class="subtitle" style="font-size: 18px;">
+        <font color="MediumSeaGreen">The framework of our method.</font>
+          It consists of an uncertainty-guided background retention that guarantees non-target region consistency,
+          and a feature-aligned motion transfer by utilizing the Mahalanobis distance constraint
+          and Inter-Frame difference constraint from two different representation spaces.
+
+      </h3>
+
+      <br><br>
+          <h2 class="title is-3">The results comparison of our method and baselines. </h2>
+      <img class="center-img center" src="./BM-Edit_files/motivation.jpg" width="200%">
+      <br><br>
+      <h3 class="subtitle" style="font-size: 18px;">
+        <font color="MediumSeaGreen">The results comparison of our method and baselines.</font>  (a) The visual comparison of our method and baselines; (b) The qualitative comparison of our method and baselines.
+          The editing results of our method are consistent over time in  non-target region  and preserve the source frame motion well.
+      </h3>
+    </div>
+  </div>
+</section>
+
+
+<div id="results" style="background-color: rgb(243, 242, 242)">
+  <br>
+  <h2 class="tldr" style="font-size: 24px;"></font><font color="SeaGreen">BM-Edit</font>  <font color="MediumSeaGreen">More Results</h2>
+  <!-- <h3 class="tldr" style="font-size: 20px;"> Low-resolution, Short Input Video &#10230; High-resolution, Long Output Video</h3> -->
+  <div>
+    <!-- <h2 class="tldr" style="font-size: 28px;">Motion of Sharks</h2> -->
+    <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/05/Adogsittinginaforest.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input  source video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/05/Adragonsittinginaforest.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Dinosaur
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/05/Alionsittinginaforest.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Lion
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/05/Atigersittinginaforest.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+           → Tiger
+          </div>
+          </th>
+          <th>
+
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/05/Arabbitsittinginaforest.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Rabbit
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/05/Amonkeysittinginaforest.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Monkey
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+        <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/15/Agreytabbycatsittingonawoodenplatformwithablueskyinthebackground.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+           Input  source video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/15/A dog sitting on a wooden platform with a blue sky in the backgro.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Dog
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/15/A fox sitting on a wooden platform with a blue sky in the backgro.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Fox
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/15/A rabbit sitting on a wooden platform with a blue sky in the b.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Rabbit
+          </div>
+          </th>
+          <th>
+
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/15/A panda sitting on a wooden platform with a blue sky in the bac.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Panda
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/15/A tiger sitting on a wooden platform with a blue sky in the bac.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Tiger
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+
+
+
+        <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="295" src="./BM-Edit_files/More Results/21/Adogsittingonthesideofacarwindowlookingoutthewindow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input  source video
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/21/A rabbit sitting on the side of a car window looking out the window.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Rabbit
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/21/A lion sitting on the side of a car window looking out the window.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Lion
+          </div>
+          </th>
+          <th>
+
+           <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/21/A cat sitting on the side of a car window looking out the window1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Cat
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/21/A tiger sitting on the side of a car window looking out the window.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Tiger
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/21/A dragon sitting on the side of a car window looking out the window.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Dinosaur
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+
+        <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="295" src="./BM-Edit_files/More Results/22/Amonkeysittingonthegroundeatingsomething.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input  source video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/22/A rabbit sitting on the ground eating something.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Rabbit
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/22/A dog sitting on the ground eating something.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Dog
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/22/A cat sitting on the ground eating something.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Cat
+          </div>
+          </th>
+          <th>
+
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/22/A bear sitting on the ground eating something.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Bear
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/22/A chicken sitting on the ground eating something.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Chicken
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+
+        <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="295" src="./BM-Edit_files/More Results/25/Akittenturningitsheadonawoodenfloor.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input  source video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/25/A dog turning its head on a wooden floor.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Dog
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/25/A rabbit turning its head on a wooden floor.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Rabbit
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/25/A lion turning its head on a wooden floor.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Lion
+          </div>
+          </th>
+          <th>
+
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/25/A bear turning its head on a wooden floor.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Bear
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/25/A fox turning its head on a wooden floor.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Fox
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+       <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="295" src="./BM-Edit_files/More Results/16/Acutedogissittingontheground.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input  source video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/16/A cute rabbit is sitting on the ground.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Rabbit
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/16/A cute cat is sitting on the ground.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Cat
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/16/A cute monkey is sitting on the ground.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Monkey
+          </div>
+          </th>
+          <th>
+
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/16/A cute lion is sitting on the ground.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Lion
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/16/A cute tiger is sitting on the ground.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Tiger
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+        <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="295" src="./BM-Edit_files/More Results/12/Aelephantcrossingaroad.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input  source video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/12/A tiger is walking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Tiger
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/12/A camel is walking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Camel
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/12/A goat is walking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Goat
+          </div>
+          </th>
+          <th>
+
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/12/A giraffe is walking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Giraffe
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/12/A lion is walking.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Lion
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+        <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="295" src="./BM-Edit_files/More Results/03/Achickenwalkinginafield.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            Input source video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/03/A duck is walking in a field.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Duck
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/03/A goose is walking in a field.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Goose
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/03/A eagle is walking in a field.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Eagle
+          </div>
+          </th>
+          <th>
+
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/03/A flamingo is walking in a field.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+             → Flamingo
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/More Results/03/A dog is walking in a field.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; margin-top: 5px; text-align: center;">
+            → Dog
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+
+
+
+<div id="results" style="background-color: rgb(255, 255, 255)">
+  <br>
+  <h2 class="tldr" style="font-size: 30px;">Comparison to Baselines</h2>
+  <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 19px;">
+    <h3>A seagull is walking. → A <u>duck</u> is walking.</h3>
+    <br>
+  </div>
+
+           <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+               <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/01/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br><br>
+
+        <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 19px;">
+    <h3>Cats are playing with dolls. → <u>Monkeys</u> are playing with <u>coconuts</u>.</h3>
+    <br>
+  </div>
+
+           <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+               <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/07/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+       <br>
+    <br><br>
+
+
+
+
+
+      <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 19px;">
+   <h3>A dog is sticking out its tongue. →  A  <u>fox</u> is sticking out its tongue.</h3>
+    <br>
+  </div>
+
+           <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+               <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/14/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br><br>
+
+
+
+
+
+      <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 17.5px;">
+    <h3> A dog is sitting on the side of a car window looking out the window. →  A <u>cat</u> is sitting on the side of a car window looking out the window.</h3>
+    <br>
+  </div>
+
+           <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+               <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/21/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br><br>
+
+
+
+
+      <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 19px;">
+    <h3>A monkey is sitting on the ground eating something. →  A <u>rabbit</u> is sitting on the ground eating something.</h3>
+    <br>
+  </div>
+
+           <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+     <br>
+
+
+               <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/22/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br><br>
+
+
+      <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 19px;">
+    <h3>A kitten is turning its head on a wooden floor. →  A <u>dog</u> is turning its head on a wooden floor.</h3>
+    <br>
+
+
+          <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/25/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+     <br>
+    <br><br>
+
+      <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 19px;">
+    <h3>A dog is sitting in a forest. → A <u>dinosaur</u> is sitting in a forest.</h3>
+    <br>
+  </div>
+
+           <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+               <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/05/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br><br>
+
+
+
+
+
+
+
+
+      <div style="text-align: center; font-family: &#39;Segoe Print&#39;, sans-serif; font-weight: bold; font-size: 19px;">
+
+          <h3>A  cat is sitting on a wooden platform with a blue sky in the background. →  A <u>dog</u> is sitting on a wooden platform with a blue sky in the background.</h3>
+    <br>
+  </div>
+
+           <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/Our.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           </font><font color="SeaGreen"> BM-Edit</font>  <br> &nbsp;
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/TAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             Tune-A-Video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/Fatezero.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+              FateZero
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/FLATTEN.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           FLATTEN
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+               <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/TokenFlow.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           TokenFlow
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/Vidtome.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+          VidToMe
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/CV.mp4">
+         Your browser does not support the video tag.
+          </video>
+           <div style="font-family: sans-serif; font-weight: bold;">
+            ControlVideo
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/CAV.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Control-A-Video
+          </div>
+          </th>
+          <th>
+
+            <video autoplay muted loop width="300" src="./BM-Edit_files/Comparison to Baselines/15/Gen1.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+           Gen1
+          </div>
+          </th>
+          <th>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br><br>
+
+
+
+<style>
+  .arrow-cell {
+    position: relative; /* Allows absolute positioning inside this cell */
+    text-align: left; /* Aligns the text to the left */
+    font-size: 16px; /* Adjusts font size as needed */
+    padding-left: 10px; /* Adds some space before the text */
+  }
+
+  .arrow-cell:after {
+    content: '';
+    display: block;
+    width: 80%; /* Reduces the arrow line length to shorten the arrow */
+    height: 2px; /* Thickness of the arrow line */
+    background-color: rgb(110, 107, 107); /* Arrow color */
+    position: absolute;
+    top: 50%; /* Centers the arrow vertically */
+    left: 10%; /* Starts the line a bit from the left */
+  }
+
+  .arrow-cell:before {
+    content: '>'; /* Uses a character for the arrowhead, adjust as needed */
+    font-size: 30px; /* Adjusts size of the arrowhead */
+    position: absolute;
+    top: 46%; /* Centers the arrowhead vertically */
+    transform: translateY(-50%);
+    right: 9%; /* Moves the arrowhead slightly to the left */
+  }
+</style>
+
+<div id="results" style="background-color: rgb(243, 242, 242)">
+  <br>
+
+  <h2 class="tldr" style="font-size: 30px;">Visual comparison for Ablation study</h2>
+    <br>
+    <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="350" src="./BM-Edit_files/Ablation study/Input.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            Input video
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="350" src="./BM-Edit_files/Ablation study/Nomask.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+          No  Background retention mask
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="350" src="./BM-Edit_files/Ablation study/NoGB.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+            No  Progressive fuzzy mask strategy
+
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+ <table style="width: 80%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+      <tbody>
+        <tr>
+          <th>
+            <video autoplay muted loop width="350" src="./BM-Edit_files/Ablation study/NoMD.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+          No  Mahalanobis distance
+          </div>
+          </th>
+          <th>
+            <video autoplay muted loop width="350" src="./BM-Edit_files/Ablation study/NoTD.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+          No Inter-Frame difference
+          </div>
+          </th>
+          <th>
+                  <video autoplay muted loop width="350" src="./BM-Edit_files/Ablation study/ours.mp4">
+         Your browser does not support the video tag.
+          </video>
+            <div style="font-family: sans-serif; font-weight: bold;">
+             BM-Edit
+
+            </div>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+
+
+
+<section class="section hero is-light" style="background-color: rgb(243, 242, 242);">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Conclusion</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 17px;">
+            In this paper, we propose a novel text-driven zero-shot video editing framework called BM-Edit.
+              Different from existing methods that focus only on the temporal consistency of the entire video,
+              our BM-Edit not only accurately achieves background retention, but also ensures object motion
+              consistency. Specifically, we innovatively design an uncertainty-guided background retention
+              mechanism to preserve the background information of the original video by blending latent noise
+              map and background region map. Subsequently, we design a progressive fuzzy mask strategy to
+              dynamically adjust the boundary of the target object for further achieving different shapes of
+              background retention. Furthermore, we establish two constraints in different representative spaces:
+              Mahalanobis distance and Inter-frame difference, for modeling motion relations to ensure that target
+              motion of edited video remains consistent with source video. Extensive experimental results demonstrate
+              that our proposed BM-Edit outperforms existing state-of-the-art methods in  background retention,
+              motion consistency, adherence to the prompt text and overall video quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+
+  
+</div></section></body></html>
